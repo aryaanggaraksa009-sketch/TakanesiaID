@@ -21,12 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en">  
-      <body  className={`${poppins.variable} antialiased`}>
-        <Header /> 
+    <html lang="en">
+      <body className={`${poppins.variable} antialiased`}>
+          <Header />
           {children}
-        <Footer />
+          <Footer />
       </body>
     </html>
   );

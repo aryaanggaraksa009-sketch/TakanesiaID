@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="mx-auto bg-dark-alternate text-white mt-31">
+    <footer className="bg-dark-alternate text-white mt-35">
       <div className="container mx-auto flex justify-between pt-14 pb-9">
         <div className="w-105 mx-7">
           <Image
@@ -21,6 +21,7 @@ const Footer = () => {
             <Link href="#hero">Home</Link>
             <Link href="#filosofi">Filosofi</Link>
             <Link href="#members">Members</Link>
+            <Link href="#daftarisi">Daftar isi</Link>
           </div>
           <div className="flex gap-7 flex-col">
             <Link href="https://www.instagram.com/takanesia.id" target="_blank" rel="noopener noreferrer">
@@ -38,10 +39,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto border-t border-t-white/15">
-        <div className="mx-7 py-6 flex">
+      <div className="border-t border-t-white/15">
+        <div className="container mx-auto py-6 px-7 flex">
           <div>Takanesia © 2026 All Rights Reserverd.</div>
-          <div className="grid grid-cols-2 w-105 ml-120">
+          <div className="container mx-auto grid grid-cols-2 w-105 ml-120">
             <Link href="#">Privacy Policy</Link>
             <Link href="#">Terms of Service</Link>
           </div>

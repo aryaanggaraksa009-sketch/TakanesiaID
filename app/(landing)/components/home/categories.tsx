@@ -35,10 +35,10 @@ const categoryList = [
 
 const CategoriesSection = () => {
   return (
-    <section id="category" className="container mx-auto pb-20 mt-20">
+    <section id="category" className="container mx-auto pb-15">
        <div className="flex flex-col items-center">
         <h2 className="font-bold text-2xl text-center">Hadir untuk fans indonesia yang ingin mendukung perjalanan Takaneko ✨</h2>
-      <div className="grid grid-cols-6 gap-10 mt-8 px-15">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
         {categoryList.map((category, index) => (
           <a
             href={category.link}
@@ -47,15 +47,15 @@ const CategoriesSection = () => {
             key={index}
             className="mt-10 rounded-lg bg-gradient-to-r from-[#F1F1F1] to-[#F7F7F7] w-full aspect-square flex justify-center category-btn bg-white rounded-lg shadow-md shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300 ease-in-out p-4 cursor-pointer" 
           >
-            <div className="flex flex-col items-center justify-center">
+            <div className="container mx-auto flex flex-col items-center justify-center">
               <Image
                 src={`/images/categories/${category.imgUrl}`}
                 width={86}
                 height={86}
                 alt={category.name}
-                className="mb-[10px]"
+                className="object-cover"
               />
-              <div className="font-medium text-xl text-center container mx-auto">
+              <div className="font-medium text-xl text-center container mx-auto flex flex-col items-center justify-center">
                 {category.name}
               </div>
             </div>
